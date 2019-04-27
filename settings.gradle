@@ -1,1 +1,1 @@
-include ':app', ':firebasevisionimagelistener'
+include ':app', ':GetLabelsFromImage_Firebase'
