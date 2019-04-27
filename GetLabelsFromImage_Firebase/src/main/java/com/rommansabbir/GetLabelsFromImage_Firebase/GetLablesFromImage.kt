@@ -19,7 +19,6 @@ object GetLablesFromImage {
         val image = FirebaseVisionImage.fromBitmap(imageToExtractBitmap)
         labelsList = ArrayList<String>()
         val detector = FirebaseVision.getInstance().visionLabelDetector
-
         detector.detectInImage(image).addOnSuccessListener { labels ->
             for (label in labels) {
                 labelsList.add(label.label.toString())
